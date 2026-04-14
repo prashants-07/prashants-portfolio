@@ -327,3 +327,44 @@ nav {
 html {
   scroll-behavior: smooth;
 }
+
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+    text-align: right; /* left हवा असेल तर left करा */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #003f88;
+    width: 100%;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    border-top: 1px solid #fff;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
