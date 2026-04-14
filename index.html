@@ -50,17 +50,23 @@
     <p>Full Stack Software Engineer </p>
   </header>
 
-  <nav>
+<nav>
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <div class="nav-links" id="navLinks">
     <a href="#about">About Me</a>
     <a href="#Experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#Skills">Skills</a>
     <a href="#Education">Education</a>
     <a href="#Certification">Certification</a>
-    <a href="#Leadership & Activities">Leadership & Activities</a>
+    <a href="#Leadership & Activities">Leadership</a>
     <a href="#Languages">Languages</a>
-    <a href="#Contact Me">Contact Me</a>
-  </nav>
+    <a href="#Contact Me">Contact</a>
+  </div>
+</nav>
 
   <section id="about">
     <h2>About Me</h2>
@@ -246,7 +252,13 @@
 </section>
 
   <footer>
-    <p>&copy; 2025 Prashant Sanjay Pawar. All rights reserved.</p>
+    <p>&copy; 2026 Prashant Sanjay Pawar. All rights reserved.</p>
   </footer>
 </body>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("navLinks");
+    menu.classList.toggle("active");
+  }
+</script>
 </html>
